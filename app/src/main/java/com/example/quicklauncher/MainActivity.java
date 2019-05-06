@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), SecActivity.class);
                 // show how to pass info to another activity
+                startIntent.putExtra("com.example.quicklauncher.SOMETHING","hello world");
                 startActivity(startIntent);
             }
         });
